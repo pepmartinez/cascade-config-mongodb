@@ -1,7 +1,7 @@
 {
   "name": "cascade-config-mongodb",
   "description": "mongodb extension for cascade-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
     "configuration",
     "hierarchy",
@@ -26,7 +26,7 @@
     "mongodb": "3.0.10"
   },
   "devDependencies": {
-    "cascade-config": "1.3.0",
+    "cascade-config": "1.4.0",
     "mocha": "5.2.0",
     "should": "13.2.1"
   },
