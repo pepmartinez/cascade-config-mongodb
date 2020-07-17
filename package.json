@@ -1,7 +1,7 @@
 {
   "name": "cascade-config-mongodb",
   "description": "mongodb extension for cascade-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": [
     "configuration",
     "hierarchy",
@@ -22,13 +22,13 @@
   },
   "license": "GPL-3.0",
   "dependencies": {
-    "lodash": "~4.17.14",
-    "mongodb": "~3.0.10"
+    "lodash": "~4.17.19",
+    "mongodb": "~3.5.9"
   },
   "devDependencies": {
-    "cascade-config": "~1.4.5",
-    "mocha": "5.2.0",
-    "should": "13.2.1"
+    "cascade-config": "~1.5.3",
+    "mocha": "~8.0.1",
+    "should": "~13.2.3"
   },
   "scripts": {
     "test": "mocha --reporter spec --check-leaks --bail test/"
