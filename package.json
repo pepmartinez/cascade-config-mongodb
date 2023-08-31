@@ -1,7 +1,7 @@
 {
   "name": "cascade-config-mongodb",
   "description": "mongodb extension for cascade-config",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "keywords": [
     "configuration",
     "hierarchy",
@@ -23,14 +23,16 @@
   "license": "MIT",
   "dependencies": {
     "lodash": "~4.17.21",
-    "mongodb": "~4.4.1"
+    "mongodb": "~4.17.0"
   },
   "devDependencies": {
     "cascade-config": "~1.6.0",
-    "mocha": "~9.2.2",
+    "mocha": "~10.2.0",
     "should": "~13.2.3"
   },
   "scripts": {
-    "test": "mocha --reporter spec --check-leaks --bail test/"
+    "test": "docker compose up -d; sleep 5; mocha --reporter spec --check-leaks --no-timeouts --exit test/ ; docker compose down",
+    "test-with-coverage": "docker compose up -d; sleep 5; nyc --reporter=html -- mocha --reporter spec --check-leaks --no-timeouts --exit ; test/docker compose down"
+
   }
 }
